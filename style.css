@@ -1,0 +1,25 @@
+@import url("css/header.css");
+@import url("css/main.css");
+@import url("css/footer.css");
+
+:root{
+    --cor-de-fundo: linear-gradient(to bottom right, #D98BAF, #6BBFBF);
+    --fonte-principal: "Montserrat";
+    --azul: #02005D;
+    --azul-claro: #5BA0D3;
+    --laranja: #CF8414; 
+    --branco: #EEE4F2;
+
+}
+
+*{
+    height:;
+}
+
+
+body{
+    background-image: var(--cor-de-fundo);
+    background-repeat: no-repeat;
+    margin: 10px 0px 10px 10px;
+    font-family: var(--fonte-principal);
+}
