@@ -1,6 +1,7 @@
 @import url("css/header.css");
 @import url("css/main.css");
 @import url("css/footer.css");
+@import url("css/main-quem-somos.css");
 
 :root{
     --cor-de-fundo: linear-gradient(to bottom right, #D98BAF, #6BBFBF);
