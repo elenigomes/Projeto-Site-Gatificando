@@ -29,22 +29,82 @@
         </div>
         <tr></tr>
     </header>
-    <main class="banner">
+    <main class="banner-contato">
         <div>
             <form action="">
-                <label for="">Nome:</label> <input type="text"> <br>
-                <label for="">Telefone:</label> <input type="number"> <br>
-                <label for="">Digite seu email:</label> <input type="email"> <br>
-                <label for="">Macho</label> <input type="radio" name="aceita"> <br>
-                <label for="">Seu gato possui algum desses vírus?</label> <br>
-                <label for="">FIV</label><input type="checkbox"> <br>
-                <label for="">FELV</label><input type="checkbox"></input> <br>
-                <label for="">Não possui</label><input type="checkbox"></input> <br>
-                <label for="">Não sei</label><input type="checkbox"></input> <br>
-                <label for="">Para quando você quer a consulta?</label> <br>
-                <input type="date"> <br>
+                <label for="nomecompleto">Nome Completo:</label>
+                <input class="input-padrao" type="text" id="nomecompleto" required placeholder="Nome e Sobrenome"><br>
+
+                <label for="telefone">Telefone:</label>
+                <input class="input-padrao" type="number" id="telefone" required placeholder="(XX) XXXXX-XXXX"> <br>
+
+                <label for="email">Digite seu email:</label> <input class="input-padrao" type="email" id="email" required placeholder="email@email.com"> <br>
+
+                <label for="">Você gostaria de agendar uma consulta?</label><br>
+                <label for="sexo">
+                    <input type="radio" name="macho" value="texto" id="radio-sexo-macho">
+                    Sim
+                </label>
+                <label for="sexo">
+                    <input type="radio" name="femea" value="texto" id="radio-sexo-femea">
+                    Não
+                </label><br>
+
+                <label for="">Seu gato é castrado?</label><br>
+
+                <label for="sexo">Qual o sexo do seu gato?</label>
+                <label for="sexo">
+                    <input type="radio" name="macho" value="texto" id="radio-sexo-macho">
+                    Macho
+                </label>
+                <label for="sexo">
+                    <input type="radio" name="femea" value="texto" id="radio-sexo-femea">
+                    Femea
+                </label><br>
+
+                <label for="doenca">Seu gato possui algum desses vírus?</label> <br>
+
+                <label for="fiv">FIV</label>
+                <input class="virus" type="checkbox">
+
+                <label for="felv">FELV</label>
+                <input class="virus" type="checkbox">
+
+                <label for="naopossui">Não possui</label>
+                <input class="nao-possui" type="checkbox">
+
+                <label for="naosei">Não sei</label>
+                <input class="nao-sei" type="checkbox"> <br>
+
+                <label for="data">Quando você quer levar seu gato para a consulta?</label> <br>
+                <input class="data" type="date"><br>
+
+                <fieldset>
+                    <legend>Em qual horário prefere seu atendimento?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Para qual especialidade?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label for="">Mande um foto do seu gato para nosso mural:</label>
+                <input type="file"><br>
+
                 <label for="">Quanto seu gato é arisco</label> <input type="range"> <br>
-                <label for="">Deixe sua mensagem:</label> <input type="text"> <br>
+                <label for="">Deixe sua mensagem:</label> <textarea cols="50" rows="5" id="mensagem"
+                placeholder="Deixe sua mensagem."></textarea> <br>
+
+                <input class="enviar" type="submit" value="Enviar">
 
             </form>
         </div>

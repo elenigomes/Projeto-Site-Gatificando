@@ -2,6 +2,7 @@
 @import url("css/main.css");
 @import url("css/footer.css");
 @import url("css/main-quem-somos.css");
+@import url("css/contato.css");
 
 :root{
     --cor-de-fundo: linear-gradient(to bottom right, #D98BAF, #6BBFBF);
