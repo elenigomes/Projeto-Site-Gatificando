@@ -20,10 +20,10 @@
                     alt="Pata de um gato Gatificando"></h1>
             <nav class="cabecalho">
                 <ul class="cabecalho_nave">
-                    <li><a class="cabecalho_nave_item" href="index.html">Home</a></li>
-                    <li><a class="cabecalho_nave_item" href="sobre_nos.html">Quem Somos</a></li>
-                    <li><a class="cabecalho_nave_item" href="servicos.html">Serviços</a></li>
-                    <li><a class="cabecalho_nave_item" href="contato.html">Contato</a></li>
+                    <li><a class="cabecalho_nave_item" href="index.html"> <img class="img_menu" src="img/home.png"><span>Home</span></a></li>
+                    <li><a class="cabecalho_nave_item" href="sobre_nos.html"> <img class="img_menu" src="img/quem-somos.png"><span>Quem Somos</span></a></li>
+                    <li><a class="cabecalho_nave_item" href="servicos.html"> <img class="img_menu" src="img/sacola.png"><span>Serviços</span></a></li>
+                    <li><a class="cabecalho_nave_item" href="contato.html"> <img class="img_menu" src="img/fale-conosco.png"><span>Contato</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -32,89 +32,101 @@
     <main class="banner-contato">
         <div class="formulario">
             <form action="">
-                <label for="nomecompleto">Nome Completo:</label>
-                <input class="input input-nome" type="text" id="nomecompleto" required placeholder="Nome e Sobrenome"><br>
+                <fieldset class="cadastro cadastro-tutor">
+                    <label class="label label-nomecompleto" id="" for="nomecompleto">Nome Completo:</label><br>
+                    <input class="input input-nome" type="text" id="nomecompleto" required
+                        placeholder="Nome e Sobrenome"><br>
 
-                <label for="telefone">Telefone:</label>
-                <input class="input input-telefone" type="number" id="telefone" required placeholder="(XX) XXXXX-XXXX"> <br>
+                    <label class="label label-telefone" id="" for="telefone">Telefone:</label><br>
+                    <input class="input input-telefone" type="number" id="telefone" required
+                        placeholder="(XX) XXXXX-XXXX"><br>
 
-                <label for="email">Digite seu email:</label> 
-                <input class="input input-email" type="email" id="email" required placeholder="email@email.com"> <br>
-
-                <label for="">Você gostaria de agendar uma consulta?</label><br>
-                <label for="consulta-sim">
-                    <input class="input input-radio" type="radio" name="sim" value="texto" id="radio-consulta-sim">
-                    Sim
-                </label>
-                <label for="consulta-nao">
-                    <input class="input input-radio" type="radio" name="nao" value="texto" id="radio-consulta-nao">
-                    Não
-                </label><br>
-
-                <fieldset>
-                    <legend>Para qual especialidade?</legend>
-                    <select>
-                        <option></option>
-                        <option>Clínico</option>
-                        <option>Dermatologia</option>
-                        <option>Cardiologia</option>
-                        <option>Cirurgia Geral</option>
-                    </select>
+                    <label class="label label-email" id="" for="email">Digite seu email:</label><br>
+                    <input class="input input-email" type="email" id="email" required placeholder="email@email.com"><br>
                 </fieldset>
 
-                <label for="data">Quando você quer levar seu gato para a consulta?</label> <br>
-                <input class="input input-date" type="date"><br>
+                <fieldset class="cadastro cadastro-consulta">
+                    <legend class="label label-consulta" id="" for="">Você gostaria de agendar uma consulta?</legend>
+                    <label class="input label-consulta-sim" id="" for="consulta-sim">
+                        <input class="input input-radio" type="radio" name="sim" value="texto" id="radio-consulta-sim">
+                        Sim
+                    </label>
+                    <label class="input label-consulta-nao" id="" for="consulta-nao">
+                        <input class="input input-radio" type="radio" name="nao" value="texto" id="radio-consulta-nao">
+                        Não
+                    </label><br>
 
-                <fieldset>
-                    <legend>Em qual horário prefere seu atendimento?</legend>
-                    <select>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Noite</option>
+                    <label class="label label-nomegato" id="" for="nomegato">Nome do Gato:</label><br>
+                    <input class="input input-nomegato" type="text" id="nomegato" required
+                        placeholder="Nome do seu gato"><br>
+
+                    <legend class="label label-especialidade" id="">Para qual especialidade?</legend>
+                    <select class="input opcao-especialidades">
+                        <option class="opcao-especialidades-item"></option>
+                        <option class="opcao-especialidades-item">Clínico</option>
+                        <option class="opcao-especialidades-item">Dermatologia</option>
+                        <option class="opcao-especialidades-item">Cardiologia</option>
+                        <option class="opcao-especialidades-item">Cirurgia Geral</option>
                     </select>
+                    <br>
+
+                    <label class="label label-data" id="" for="data">Quando você quer levar seu gato para a
+                        consulta?</label> <br>
+                    <input class="input input-date" type="date"><br>
+
+
+                    <legend class="label label-horario" id="">Em qual horário prefere seu atendimento?</legend>
+                    <select class="input opcao-horario">
+                        <option class="opcao-horario-item">Manhã</option>
+                        <option class="opcao-horario-item">Tarde</option>
+                        <option class="opcao-horario-item">Noite</option>
+                    </select>
+                    <br>
+
+                    <label class="label label-sexo" id="" for="sexo">Qual o sexo do seu gato?</label><br>
+                    <label class="input label-sexo-macho" for="sexo">
+                        <input class="input input-radio" type="radio" name="macho" value="texto" id="radio-sexo-macho">
+                        Macho
+                    </label>
+                    <label class="input label-sexo-femea for=" sexo">
+                        <input class="input input-radio" type="radio" name="femea" value="texto" id="radio-sexo-femea">
+                        Femea
+                    </label><br>
+
+                    <label class="label label-castrado" id="" for="castrado">Seu gato é castrado?</label><br>
+                    <label class="input label-castrado-sim for=" castrado-sim">
+                        <input class="input input-radio" type="radio" name="sim" value="texto" id="radio-castrado-sim">
+                        Sim
+                    </label>
+                    <label class="input label-castrado-nao for=" castrado-nao">
+                        <input class="input input-radio" type="radio" name="nao" value="texto" id="radio-castrado-nao">
+                        Não
+                    </label><br>
+
+                    <label class="label label-virus" id="" for="doenca">Seu gato possui algum desses vírus?</label> <br>
+
+                    <input class="input input-virus fiv" type="checkbox">
+                    <label class="input label-virus" for="fiv">FIV</label>
+
+                    <input class="input input-virus felv" type="checkbox">
+                    <label class="input label-virus" for="felv">FELV</label>
+
+                    <input class="input input-virus naopossui" type="checkbox">
+                    <label class="input label-virus" for="naopossui">Não possui</label>
+
+                    <input class="input input-virus naosei" type="checkbox">
+                    <label class="input label-virus" for="naosei">Não sei</label><br>
+
+                    <label class="label label-arisco" id="" for="">Quanto seu gato é arisco</label> <br>
+                    <input class="input input-arisco" type="range"> <br>
+
+                    <label class="label label-foto" id="" for="foto">Mande um foto do seu gato para nosso
+                        mural:</label><br>
+                    <input class="input input-foto" type="file"><br>
                 </fieldset>
 
-                <label for="sexo">Qual o sexo do seu gato?</label>
-                <label for="sexo">
-                    <input class="input input-radio" type="radio" name="macho" value="texto" id="radio-sexo-macho">
-                    Macho
-                </label>
-                <label for="sexo">
-                    <input class="input input-radio" type="radio" name="femea" value="texto" id="radio-sexo-femea">
-                    Femea
-                </label><br>
-
-                <label for="castrado">Seu gato é castrado?</label><br>
-                <label for="castrado-sim">
-                    <input class="input input-radio" type="radio" name="sim" value="texto" id="radio-castrado-sim">
-                    Sim
-                </label>
-                <label for="castrado-nao">
-                    <input class="input input-radio" type="radio" name="nao" value="texto" id="radio-castrado-nao">
-                    Não
-                </label><br>
-
-                <label for="doenca">Seu gato possui algum desses vírus?</label> <br>
-
-                <input class="input input-virus" type="checkbox">
-                <label for="fiv">FIV</label>
-                
-                <input class="input input-virus" type="checkbox">
-                <label for="felv">FELV</label>
-
-                <input class="input input-virus" type="checkbox">
-                <label for="naopossui">Não possui</label>
-
-                <input class="input input-virus" type="checkbox">
-                <label for="naosei">Não sei</label><br>
-
-                <label for="">Quanto seu gato é arisco</label> <input type="range"> <br>
-                
-                <label for="foto">Mande um foto do seu gato para nosso mural:</label>
-                <input class="input input-foto" type="file"><br>
-                
-                <label for="">Deixe sua mensagem:</label> <textarea cols="50" rows="5" id="mensagem"
-                placeholder="Deixe sua mensagem."></textarea> <br>
+                <label class="label label-mensagem" id="" for="">Deixe sua mensagem:</label><br><br>
+                <textarea cols="50" rows="5" id="mensagem" placeholder="Deixe sua mensagem."></textarea><br>
 
                 <input class="input input-foto" type="submit" value="Enviar">
 
@@ -122,28 +134,33 @@
         </div>
     </main>
     <footer class="rodape">
-        <div>            
+        <div>
             <div class="midias-sociais">
                 <h4 class="mideas-sociais_titulo">Siga-nos nas Redes Sociais</h4>
                 <ul class="midias-sociais_lista">
-                    <li class="lista_item"><a class="midias-sociais_link" href="#" target="_blank"><img class="img_midias" src="img/instagran.png" alt=""></a></li>
-                    <li class="lista_item"><a class="midias-sociais_link" href="#" target="_blank"><img class="img_midias" src="img/facebook.png" alt=""></a></li>
-                    <li class="lista_item"><a class="midias-sociais_link" href="#" target="_blank"><img class="img_midias" src="img/whatszap.png" alt=""></a></li>
+                    <li class="lista_item"><a class="midias-sociais_link" href="#" target="_blank"><img
+                                class="img_midias" src="img/instagran.png" alt=""></a></li>
+                    <li class="lista_item"><a class="midias-sociais_link" href="#" target="_blank"><img
+                                class="img_midias" src="img/facebook.png" alt=""></a></li>
+                    <li class="lista_item"><a class="midias-sociais_link" href="#" target="_blank"><img
+                                class="img_midias" src="img/whatszap.png" alt=""></a></li>
                 </ul>
             </div>
             <div style="height: 103px; overflow: hidden;">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M-6.49,66.36 C149.99,0 349.2,100.01 500,50.01 L500,0 L0,0 Z" style="stroke: none; fill: #CF8414;"></path>
+                    <path d="M-6.49,66.36 C149.99,0 349.2,100.01 500,50.01 L500,0 L0,0 Z"
+                        style="stroke: none; fill: #CF8414;"></path>
                 </svg>
             </div>
             <div class="informacoes">
                 <p class="informacoes_texto"><a class="informacoes_link" href="#" target="_blank">Adote um pet</a> </p>
                 <p class="informacoes_texto sub-texto">Gatificando LTDA - CNPJ: 00.960.950/0000-00</p>
-                <p class="informacoes_texto sub-texto">Endereço: Rua Arnulfo de Lima, 2385 - Vila Santa Cruz, Franca/SP - CEP 14.403-471</p>            
+                <p class="informacoes_texto sub-texto">Endereço: Rua Arnulfo de Lima, 2385 - Vila Santa Cruz, Franca/SP
+                    - CEP 14.403-471</p>
                 <p class="informacoes_texto">© Copyright - Todos os direitos reservados.</p>
                 <p class="informacoes_texto sub-texto">https://www.gatificando.com.br</p>
-            </div> 
-        </div>        
+            </div>
+        </div>
     </footer>
 </body>
 

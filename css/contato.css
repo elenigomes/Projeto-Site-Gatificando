@@ -3,8 +3,35 @@
     margin: 0 20px 0 20px;
 }
 
-.formulario{}
+.formulario{
+    
+}
+
+.cadastro{
+    margin-top: 10px;
+}
 
 .input{
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
+
+.label{
+    margin-top: 10px;
+}
+
+.input-nome, .input-telefone, .input-email{
+    margin-top: 5px;
+}
+
+.opcao-especialidades{
+    
+}
+
+.opcao-horario{
+    
+}
+
+@media (min-width:1024px) {
+    .banner-contato{
+        padding-left: 200px;
+    }

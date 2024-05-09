@@ -1,17 +1,18 @@
-.banner_quem-somos{
+.banner_quem-somos {
     font-family: var(--fonte-principal);
     margin: 0 20px 0 20px;
+    
 }
 
-.banner_texto{
+.banner_texto {
     margin-bottom: 20px;
 }
 
-.banner_botao{
+.banner_botao {
     align-items: ;
 }
 
-.descricao_quem-somos{
+.descricao_quem-somos {
     margin-top: 20px;
     color: var(--azul);
     font-weight: 500;
@@ -20,7 +21,7 @@
     text-align: justify;
 }
 
-.carrossel__container{
+.carrossel__container {
     margin: 20px 10px 20px 10px;
 }
 
@@ -38,12 +39,45 @@
     display: none;
 }
 
-.link-agendamento{
+.link-agendamento {
     margin: 0 15%;
 }
 
+.banner_imagens{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
-        .swiper-pagination {
+    .img_menu {
+        display: block;
+    }
+
+    .banner_quem-somos{
+        padding-left: 200px;
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    .banner_principal{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .banner_texto{
+        margin: 0;
+    }    
+
+    .link-agendamento {
+        margin: 20px 35%;
+    }
+
+    .carrossel__container{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-pagination {
         margin: 2em 0 3em 0;
     }
 
@@ -52,9 +86,62 @@
         display: block;
         top: 60%;
     }
+    
+    .banner_imagens{
+        display: none;
+    }
+}
+
+@media (min-width:1350px) {
+    .banner_principal{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .banner_conteiner{
+        display: inline-block;
+        width: 50%;
+        
+    }
+
+    .banner_texto{
+        margin;
+    }
+    
+    .banner_botao{
+        margin: 30px 20% ;
+    }
+    .link-agendamento{
+        margin: 0;
+    }
+
+    .carrossel__container{
+        display: none;
+    }
+
+    .banner_imagens{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+    .lista-imagens{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cat-clinica{
+        width: 38%;
+        height: auto;
+        margin-top: 10px;
+    }
+
 }
 
 @media screen and (min-width: 1728px) {
+    .banner_imagens{
+        display: none;
+    }
     .carrossel__container {
         display: flex;
         margin: 0 20vw 3em 20vw;
@@ -63,5 +150,42 @@
 
     .swiper-pagination {
         margin: 1em 0;
+
+    }
+
+    .img_menu {
+        display: block;
+    }
+
+    .banner_quem-somos{
+        padding-left: 200px;
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    .banner_principal{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .banner_texto{
+        margin: 0;
+    }    
+
+    .link-agendamento {
+        margin: 20px 15%;
+    }
+
+   
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+    
+    .banner_imagens{
+        display: none;
     }
 }
+}
+
